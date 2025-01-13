@@ -1,6 +1,6 @@
 joblib
 pandas
-numpy
+numpy==1.17.3
 matplotlib
 streamlit
 xgboost
