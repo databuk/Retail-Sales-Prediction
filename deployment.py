@@ -1,11 +1,13 @@
 import streamlit as st
+
+
 import pandas as pd
 import joblib
 import numpy as np
 from data_cleaner import clean_data
 
 
-pipeline = joblib.load('pipeline.joblib')
+pipeline = joblib.load('sales_pipeline.joblib')
 
 def collect_user_input():
     item_weight = st.number_input('Item Weight', min_value=0, max_value=50, value='min')
